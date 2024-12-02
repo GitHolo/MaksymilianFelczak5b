@@ -7,21 +7,37 @@
 
 * {
 	font-family: "Montserrat", sans-serif;
+}
+body {
 	margin: 0;
 }
-
 ul {
 	list-style: none;
 }
 #banner {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 	height: 300px;
 	padding: 0;
-	width: 100vw;
+	width: 100%;
+	margin: 0 !important;
 }
+
 #banner > img {
-	width: 33%;
+	width: 33.33%;
 	height: 100%;
+	object-fit: cover;
+}
+#donDesc > p {
+	width: auto !important;
+}
+p {
+	width: 60%;
+}
+#faq > p {
+	margin-left: 50px;
+	width: 50%;
 }
 header {
 	display: flex;
@@ -29,6 +45,7 @@ header {
 	justify-content: space-around;
 	align-items: center;
 	height: 150px;
+	text-wrap: nowrap;
 }
 #logo {
 	display: flex;
@@ -72,4 +89,26 @@ header {
 	color: #7b7b7b;
 	text-transform: uppercase;
 	font-size: 20px;
+}
+#thank > img {
+	width: 100%;
+	height: auto;
+	margin: 0 !important;
+}
+main {
+	color: #808080;
+}
+main > section {
+	margin: 40px;
+}
+#thank {
+	margin: 0;
+}
+#thank > * {
+	margin-left: 40px;
+}
+a {
+	text-decoration: none;
+	color: #7b7b7b;
+	font-weight: bold;
 }
