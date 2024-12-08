@@ -47,34 +47,54 @@
         <section id="donPayment">
             <h2>Select your donation here:</h2>
             <form>
-                <input type="radio" id="oneTime" name="donType"/><label for="oneTime">One time donation</label>
-                <input type="radio" id="monthly"name="donType"/><label for="monthly" >Monthly donation</label>
+                <div class="pType">
+                    <label for="oneTime">
+                        <input type="radio" id="oneTime" name="donType"/>
+                        <span class="custom-radio"></span> One time donation
+                    </label>
+               
+                    <label for="monthly">
+                        <input type="radio" id="monthly" name="donType"/>
+                        <span class="custom-radio"></span> Monthly donation
+                    </label>
+                </div>
+                <section id="donBoxes">
                 <div class="donBox">
-                    <input type="radio" id="donTen" name="donationAmount" value="10">
                     <label for="donTen">
                         <h2>€10</h2>
                         <p>This donation will go towards our equipment and volunteer training.</p>
+                        <input type="radio" id="donTen" name="donationAmount" value="10">
+                        <span class="donButton">donate</span>
                     </label>
                 </div>
                 <div class="donBox">
-                    <input type="radio" id="donTwenty" name="donationAmount" value="20">
                     <label for="donTwenty">
                         <h2>€20</h2>
                         <p>This donation will go towards our equipment and volunteer training.</p>
+                        <input type="radio" id="donTwenty" name="donationAmount" value="20">
+                        <span class="donButton">donate</span>
                     </label>
                 </div>
                 <div class="donBox">
-                    <input type="radio" id="donFifty" name="donationAmount" value="50">
                     <label for="donFifty">
                         <h2>€50</h2>
                         <p>This donation will go towards our equipment and volunteer training.</p>
+                        <input type="radio" id="donFifty" name="donationAmount" value="50">
+                        <span class="donButton">donate</span>
                     </label>
                 </div>
-                <input type="radio" id="custom"  name="donType"><label for="custom">Or choose custom amount:</label><input type="number" id="custom" class="customAm" name="donationAmount" value="0">
+                </section>
+                <div class="pType">
+                <label for="custom">
+                    <input type="radio" id="custom"  name="donType"><span class="custom-radio"></span>Or choose custom amount:<div class="custom-input-wrapper">
+                        <span class="euro-sign">€</span>
+                        <input type="number" id="custom" class="customAm" min="0" name="donType" value="0">
+                    </div>
+            </label></div>
             </form>
         </section>
         <section id="paymentType">
-            <h2>Choose payment type:</h2><div id="secure">secure <img href="./assets/widgets/lock.png" /></div>
+            <h2>Choose payment type:</h2><div id="secure">secure <img src="./assets/widgets/lock.png" /></div>
             <form>
                 <input type="radio" id="paypal" name="paymentType"/><label for="paypal">PayPal</label>
                 <input type="radio" id="stripe" name="paymentType"/><label for="stripe">Credit/Debit Card</label>
@@ -98,12 +118,16 @@
             <img src="./assets/photos/hands.png" alt="Hands"/>
             <p>Thank you for your interest in supporting our team.
                 <br><br>
-                I you are interested in volunteering, please contact our enquiries office at <b>028 28361</b> or contact our volunteers coordinator: <a href="email:>katecrowley224@gmail.ie">katecrowley224@gmail.ie</a>
+                I you are interested in volunteering, please contact our enquiries office at <b>028 28361</b> or contact our volunteers coordinator: <a href="email:katecrowley224@gmail.ie">katecrowley224@gmail.ie</a>
                 <br><br>
                 Please not that all volunteers are expected to have in-date Garda vetting forms.
                 <br><br>
                 After contacting us and confirming your volunteer status, you can download our membership pack here.</p>
         </section>
     </main>
+    <footer>
+        <a href="tel:1800333333" ><img src="./assets/widgets/phone.png" alt="Phone"/> 1800 333 333</a>
+        <a href="email:info@wchrr.ie" ><img src="./assets/widgets/email.png" alt="email"/>info@wchrr.ie</a>
+    </footer>
 </body>
 </html>

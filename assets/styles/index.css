@@ -90,6 +90,9 @@ header {
 	text-transform: uppercase;
 	font-size: 20px;
 }
+#links > li > a:hover {
+	color: #27488f;
+}
 #thank > img {
 	width: 100%;
 	height: auto;
@@ -111,4 +114,141 @@ a {
 	text-decoration: none;
 	color: #7b7b7b;
 	font-weight: bold;
+}
+input[type="radio"] {
+	display: none;
+}
+
+.custom-radio {
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	border: 6px solid #7b7b7b;
+	border-radius: 50%;
+	cursor: pointer;
+	margin-right: 5px;
+	transition: background-color 0.3s ease;
+}
+
+input[type="radio"]:checked + .custom-radio {
+	background-color: #709bff;
+}
+
+.pType > label {
+	display: flex;
+	align-items: center;
+	margin-right: 7px;
+}
+.pType {
+	display: flex;
+}
+.donBox {
+	background-color: #709bff;
+	border-radius: 5%;
+	height: 250px;
+	width: 280px;
+	padding: 15px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	box-shadow: rgba(0, 0, 0, 0.356) 6px 6px 10px;
+	position: relative;
+}
+
+#donBoxes {
+	display: flex;
+	justify-content: space-around;
+	gap: 20px;
+}
+.donBox > label {
+	margin-bottom: 50px;
+}
+.donBox > label > p {
+	width: auto !important;
+	font-weight: 1000;
+	margin-top: 50px;
+}
+.donBox > label > h2 {
+	font-weight: 1000;
+	font-size: 30px;
+}
+.donButton {
+	display: inline-block;
+	background-color: white;
+	color: #709bff;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	transition: background-color 0.2s, color 0.2s;
+	position: absolute;
+	bottom: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+.custom-input-wrapper {
+	display: inline-flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 8px;
+	border: 4px solid #7b7b7b;
+	padding: 10px 15px;
+	width: 100%;
+	max-width: 40px;
+
+	margin-left: 10px;
+}
+
+.customAm {
+	border: none;
+	outline: none;
+	background: transparent;
+	color: #7b7b7b;
+	font-size: 1.2em;
+	width: 100%;
+	text-align: right;
+}
+
+.customAm:focus {
+	border: none;
+	outline: none;
+}
+.customAm::-webkit-outer-spin-button,
+.customAm::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.customAm[type="number"] {
+	-moz-appearance: textfield;
+}
+.euro-sign {
+	color: #7b7b7b;
+	font-weight: bold;
+}
+
+input[type="radio"]:checked + .donButton {
+	background-color: #27488f;
+	color: white;
+}
+footer {
+	background-color: #27488f;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+}
+footer > a {
+	color: white;
+	display: flex;
+	align-items: center;
+}
+footer > a > img {
+	filter: brightness(1000%) contrast(1000%);
+	width: 30px;
+	margin-right: 5px;
 }
