@@ -11,6 +11,18 @@
 body {
 	margin: 0;
 }
+header {
+	display: flex;
+	padding: 20px;
+	justify-content: space-around;
+	align-items: center;
+	height: 150px;
+	width: 100%;
+	z-index: 999999;
+	text-wrap: nowrap;
+	position: fixed;
+	background-color: white;
+}
 ul {
 	list-style: none;
 }
@@ -21,7 +33,8 @@ ul {
 	height: 300px;
 	padding: 0;
 	width: 100%;
-	margin: 0 !important;
+	margin: 0;
+	padding-top: 200px;
 }
 
 #banner > img {
@@ -39,14 +52,7 @@ p {
 	margin-left: 50px;
 	width: 50%;
 }
-header {
-	display: flex;
-	padding: 20px;
-	justify-content: space-around;
-	align-items: center;
-	height: 150px;
-	text-wrap: nowrap;
-}
+
 #logo {
 	display: flex;
 	flex-direction: column;
@@ -307,7 +313,7 @@ p > a:hover {
 input[type="radio"]:checked + .pTypeButton {
 	background-color: #27488f;
 }
-#finishPayment > form {
+#finishPayment > div {
 	display: flex;
 	align-items: center;
 	justify-content: center;
