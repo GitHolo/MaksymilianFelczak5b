@@ -199,8 +199,8 @@ input[type="radio"]:checked + .custom-radio {
 	padding: 10px 15px;
 	width: 100%;
 	max-width: 40px;
-
 	margin-left: 10px;
+	transition: border-color 0.3s ease;
 }
 
 .customAm {
@@ -217,6 +217,11 @@ input[type="radio"]:checked + .custom-radio {
 	border: none;
 	outline: none;
 }
+
+.custom-input-wrapper:has(.customAm:focus) {
+	border-color: #709bff;
+}
+
 .customAm::-webkit-outer-spin-button,
 .customAm::-webkit-inner-spin-button {
 	-webkit-appearance: none;
@@ -226,6 +231,7 @@ input[type="radio"]:checked + .custom-radio {
 .customAm[type="number"] {
 	-moz-appearance: textfield;
 }
+
 .euro-sign {
 	color: #7b7b7b;
 	font-weight: bold;
@@ -251,4 +257,73 @@ footer > a > img {
 	filter: brightness(1000%) contrast(1000%);
 	width: 30px;
 	margin-right: 5px;
+}
+#paymentDescs {
+	display: flex;
+	justify-content: space-between;
+}
+#secure {
+	background-color: #dce6ff;
+	color: #709bff;
+	padding: 10px 20px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	height: 20px;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	display: flex;
+	font-weight: 1000;
+	cursor: default;
+}
+#secure > img {
+	width: 30px;
+	margin-left: 5px;
+}
+#pTypeButtons {
+	display: flex;
+	justify-content: center;
+	gap: 50px;
+}
+p > a:hover {
+	color: #27488f;
+}
+.pTypeButton {
+	display: flex;
+	padding: 20px;
+	width: 300px;
+	background-color: #709bff;
+	border-radius: 20px;
+	height: 40px;
+	align-items: center;
+	gap: 20px;
+	justify-content: center;
+	transition: background-color 0.2s;
+	cursor: pointer;
+}
+#pTypeButtons > label > img {
+	height: 100%;
+}
+input[type="radio"]:checked + .pTypeButton {
+	background-color: #27488f;
+}
+#finishPayment > form {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input[type="submit"] {
+	background-color: #709bff;
+	border: none;
+	color: white;
+	padding: 15px 25px;
+	border-radius: 10px;
+	font-size: 20px;
+	cursor: pointer;
+	text-transform: uppercase;
+	font-weight: 1000;
+	transition: background-color 0.2s;
+}
+input[type="submit"]:hover {
+	background-color: #27488f;
 }
