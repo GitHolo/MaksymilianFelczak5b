@@ -13,7 +13,7 @@ body {
 }
 header {
 	display: flex;
-	padding: 20px;
+	padding: 0 20px;
 	justify-content: space-around;
 	align-items: center;
 	height: 150px;
@@ -267,11 +267,12 @@ footer > a > img {
 #paymentDescs {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 #secure {
 	background-color: #dce6ff;
 	color: #709bff;
-	padding: 10px 20px;
+	padding: 5px 20px;
 	border-radius: 20px;
 	text-transform: uppercase;
 	height: 20px;
