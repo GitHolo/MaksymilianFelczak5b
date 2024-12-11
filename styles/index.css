@@ -1,3 +1,4 @@
+/* Define a custom font named "Montserrat" */
 @font-face {
 	font-family: "Montserrat";
 	src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
@@ -5,21 +6,28 @@
 	font-style: normal;
 }
 
+/* Apply the custom font to all elements */
 * {
 	font-family: "Montserrat", sans-serif;
 }
+
+/* Debugging element */
 #site-base {
 	width: 100%;
 	position: absolute;
 	opacity: 0.4;
 	z-index: 9999999;
+	display: none !important;
 }
+
+/* Remove default margin from the body element */
 body {
 	margin: 0;
 }
+
+/* Header styling */
 header {
 	display: flex;
-
 	align-items: center;
 	height: 165px;
 	z-index: 999999;
@@ -29,9 +37,37 @@ header {
 	justify-content: space-between;
 	width: 100%;
 }
+/* Unordered list styling */
 ul {
 	list-style: none;
 }
+/* Heading styling */
+h2 {
+	font-size: 26px;
+	word-spacing: 1.5px;
+}
+p {
+	width: 52%;
+	font-size: 17px;
+}
+main {
+	color: #808080;
+}
+main > section {
+	margin: 22px;
+	margin-left: 64px;
+}
+
+a {
+	text-decoration: none;
+	color: #7b7b7b;
+	font-weight: bold;
+	cursor: pointer;
+}
+input[type="radio"] {
+	display: none;
+}
+/* Banner styling */
 #banner {
 	display: flex;
 	flex-wrap: wrap;
@@ -42,37 +78,35 @@ ul {
 	margin: 0;
 	padding-top: 165px;
 }
-h2 {
-	font-size: 26px;
-}
+
+/* Image styling within the banner */
 #banner > img {
 	width: 33.33%;
 	height: 100%;
 	object-fit: fill;
 }
+
+/* Donation description styling */
 #donDesc {
 	margin: 22px;
 	margin-left: 64px;
 }
+
+/* Donation description heading styling */
 #donDesc > h2 {
 	font-size: 26px;
 }
+/* Donation description paragraph styling */
 #donDesc > p {
 	width: auto !important;
+	font-weight: 1000;
+	margin-top: 38px;
 	font-size: 17.5px;
-	margin: 0;
-	margin-top: 14px;
 }
-#donPayment > h2 {
-	font-size: 26.2px;
-	margin-bottom: 18px;
-}
-p {
-	width: 60%;
-}
-#faq > p {
-	margin-left: 50px;
-	width: 50%;
+
+/* Donation payment type styling */
+#paymentType {
+	margin-top: 40px;
 }
 
 #logo {
@@ -87,13 +121,7 @@ p {
 #logo > img {
 	width: 240px;
 }
-#hPhone {
-	font-weight: bold;
-	color: #333;
-}
-#hPhone > img {
-	margin-right: 14px;
-}
+
 #logo > a {
 	color: #27488f;
 	text-decoration: none;
@@ -104,6 +132,13 @@ p {
 	font-weight: 100;
 	font-size: 18px;
 	word-spacing: 4px;
+}
+#hPhone {
+	font-weight: bold;
+	color: #333;
+}
+#hPhone > img {
+	margin-right: 14px;
 }
 #links {
 	display: flex;
@@ -124,32 +159,6 @@ p {
 }
 #links > li > a:hover {
 	color: #27488f;
-}
-#thank > img {
-	width: 100%;
-	height: auto;
-	margin: 0 !important;
-}
-main {
-	color: #808080;
-}
-main > section {
-	margin: 22px;
-	margin-left: 64px;
-}
-#thank {
-	margin: 0;
-}
-#thank > * {
-	margin-left: 40px;
-}
-a {
-	text-decoration: none;
-	color: #7b7b7b;
-	font-weight: bold;
-}
-input[type="radio"] {
-	display: none;
 }
 
 .custom-radio {
@@ -268,23 +277,7 @@ input[type="radio"]:checked + .donButton {
 	background-color: #27488f;
 	color: white;
 }
-footer {
-	background-color: #27488f;
-	padding: 20px;
-	display: flex;
-	justify-content: space-between;
-	margin-top: 40px;
-}
-footer > a {
-	color: white;
-	display: flex;
-	align-items: center;
-}
-footer > a > img {
-	filter: brightness(1000%) contrast(1000%);
-	width: 30px;
-	margin-right: 5px;
-}
+
 #paymentDescs {
 	display: flex;
 	justify-content: space-between;
@@ -345,18 +338,22 @@ p > a:hover {
 input[type="radio"]:checked + .pTypeButton {
 	background-color: #27488f;
 }
+#finishPayment {
+	margin-top: 38px;
+}
 #finishPayment > div {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	margin-left: 430px;
+}
+#finishPayment > p {
+	word-spacing: 1.5px;
 }
 input[type="submit"] {
 	background-color: #709bff;
 	border: none;
 	color: white;
-	padding: 15px 25px;
-	border-radius: 10px;
-	font-size: 20px;
+	padding: 15px 35px;
+	border-radius: 14px;
+	font-size: 22px;
 	cursor: pointer;
 	text-transform: uppercase;
 	font-weight: 1000;
@@ -364,4 +361,72 @@ input[type="submit"] {
 }
 input[type="submit"]:hover {
 	background-color: #27488f;
+}
+h3 {
+	margin-top: 32px;
+	font-size: 17px;
+	word-spacing: 1.5px;
+}
+#faq > p {
+	margin-left: 44px;
+	width: 55%;
+	font-size: 17.5px;
+	margin-bottom: 46px;
+}
+
+#faq > h2 {
+	margin-top: 59px;
+	word-spacing: 1.5px;
+	margin-bottom: 20px;
+}
+#faq > p:last-of-type {
+	margin-bottom: 40px;
+}
+#thank > img {
+	width: 100%;
+	height: auto;
+	margin: 0 !important;
+}
+#thank {
+	margin: 0;
+}
+#thankDesc > p:first-child {
+	word-spacing: 1.5px;
+	letter-spacing: 0 !important;
+}
+#thankDesc > p {
+	word-spacing: 1.5px;
+	width: 58%;
+	line-height: 21px;
+}
+#thankDesc > p > a {
+	margin-left: 2px;
+	letter-spacing: 0.3px;
+}
+#thankDesc {
+	margin-top: 35px;
+}
+#thank > * {
+	margin-left: 64px;
+}
+footer {
+	background-color: #27488f;
+	padding: 20px 26px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	height: 42px;
+}
+footer > a {
+	color: white;
+	display: flex;
+	align-items: center;
+	font-size: 18px;
+	margin-bottom: 4px;
+	letter-spacing: 1px;
+}
+footer > a > img {
+	filter: brightness(1000%) contrast(1000%);
+	width: 30px;
+	margin-right: 17px;
 }

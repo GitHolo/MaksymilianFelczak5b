@@ -14,6 +14,7 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link href="./assets/fonts/Montserrat-Regular.ttf" rel="stylesheet" type="text/css">
     <meta charset="UTF-8">
@@ -21,92 +22,99 @@
     <title>West Cork Helicopter Rapid Response</title>
     <link rel="stylesheet" href="./styles/index.css">
 </head>
+
 <body>
-    <img src="site-base-1.png" id="site-base"/>
-    <header><div id="logo"><img src="./assets/logo.png" alt="Logo of West Cork Helicopter Rapid Response">
-        <a href="tel:1800333333" id="hPhone" ><img src="./assets/widgets/phone.png" alt="Phone"/> 1800 333 333</a>
-    </div><ul id="links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">Ways to Support</a></li>
-    </ul></header>
+    <img src="site-base-1.png" id="site-base" />
+    <header>
+        <div id="logo"><img src="./assets/logo.png" alt="Logo of West Cork Helicopter Rapid Response">
+            <a href="tel:1800333333" id="hPhone"><img src="./assets/widgets/phone.png" alt="Phone" /> 1800 333 333</a>
+        </div>
+        <ul id="links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Ways to Support</a></li>
+        </ul>
+    </header>
     <main>
         <section id="banner">
             <img src="./assets/photos/photo1.jpg" />
-            <img src="./assets/photos/photo2.jpg"/>
-            <img src="./assets/photos/photo3.jpg"/>
+            <img src="./assets/photos/photo2.jpg" />
+            <img src="./assets/photos/photo3.jpg" />
         </section>
         <section id="donDesc">
             <h2>Donations</h2>
             <p>Thank you for your interest in supporting our cause.<br>
-            With your help, we will be able to afford better equipment, machinery and have the facilities to better reward our volunteers.
+                With your help, we will be able to afford better equipment, machinery and have the facilities to better reward our volunteers.
             </p>
             <p>We are a registered Irish Charity and we welcome all donations. Absolutely nobody within the organization us paid, their<br>
-            professional time is entirely voluntary.<br>    
-            A contribution to WCHRR is an investment into improved safety for West Cork.</p>
+                professional time is entirely voluntary.<br>
+                A contribution to WCHRR is an investment into improved safety for West Cork.</p>
         </section>
         <section id="donPayment">
             <h2>Select your donation here:</h2>
             <form>
                 <div class="pType">
                     <label for="oneTime">
-                        <input type="radio" id="oneTime" name="donType"/>
+                        <input type="radio" id="oneTime" name="donType" />
                         <span class="custom-radio"></span> One time donation
                     </label>
-               
+
                     <label for="monthly">
-                        <input type="radio" id="monthly" name="donType"/>
+                        <input type="radio" id="monthly" name="donType" />
                         <span class="custom-radio"></span> Monthly donation
                     </label>
                 </div>
                 <section id="donBoxes">
-                <div class="donBox">
-                    <label for="donTen">
-                        <h2>€10</h2>
-                        <p>This donation will go towards our equipment and volunteer training.</p>
-                        <input type="radio" id="donTen" name="donationAmount" value="10">
-                        <span class="donButton">donate</span>
-                    </label>
-                </div>
-                <div class="donBox">
-                    <label for="donTwenty">
-                        <h2>€20</h2>
-                        <p>This donation will go towards our equipment and volunteer training.</p>
-                        <input type="radio" id="donTwenty" name="donationAmount" value="20">
-                        <span class="donButton">donate</span>
-                    </label>
-                </div>
-                <div class="donBox">
-                    <label for="donFifty">
-                        <h2>€50</h2>
-                        <p>This donation will go towards our equipment and volunteer training.</p>
-                        <input type="radio" id="donFifty" name="donationAmount" value="50">
-                        <span class="donButton">donate</span>
-                    </label>
-                </div>
+                    <div class="donBox">
+                        <label for="donTen">
+                            <h2>€10</h2>
+                            <p>This donation will go towards our equipment and volunteer training.</p>
+                            <input type="radio" id="donTen" name="donationAmount" value="10">
+                            <span class="donButton">donate</span>
+                        </label>
+                    </div>
+                    <div class="donBox">
+                        <label for="donTwenty">
+                            <h2>€20</h2>
+                            <p>This donation will go towards our equipment and volunteer training.</p>
+                            <input type="radio" id="donTwenty" name="donationAmount" value="20">
+                            <span class="donButton">donate</span>
+                        </label>
+                    </div>
+                    <div class="donBox">
+                        <label for="donFifty">
+                            <h2>€50</h2>
+                            <p>This donation will go towards our equipment and volunteer training.</p>
+                            <input type="radio" id="donFifty" name="donationAmount" value="50">
+                            <span class="donButton">donate</span>
+                        </label>
+                    </div>
                 </section>
                 <div class="pType">
-                <label for="custom">
-                    <input type="radio" id="custom"  name="donationAmount"><span class="custom-radio"></span>Or choose custom amount:
-                    <input type="number" id="donationAmount" name="donationAmount" placeholder="€0" min="0">
-            </label></div>
-            
+                    <label for="custom">
+                        <input type="radio" id="custom" name="donationAmount"><span class="custom-radio"></span>Or choose custom amount:
+                        <input type="number" id="donationAmount" name="donationAmount" placeholder="€0" min="0">
+                    </label></div>
+
         </section>
-        <section id="paymentType"><div id="paymentDescs">
-            <h2>Choose payment type:</h2><div id="secure">secure <img src="./assets/widgets/lock.png" /></div></div>
+        <section id="paymentType">
+            <div id="paymentDescs">
+                <h2>Choose payment type:</h2>
+                <div id="secure">secure <img src="./assets/widgets/lock.png" /></div>
+            </div>
             <div id="pTypeButtons">
                 <input type="radio" id="paypal" name="paymentType"><label class="pTypeButton" for="paypal">
-                <img src="./assets/widgets/paypal.png" alt="paypal"></label>
+                    <img src="./assets/widgets/paypal.png" alt="paypal"></label>
 
-                <input type="radio" id="stripe" name="paymentType"/><label class="pTypeButton" for="stripe"><img src="./assets/widgets/mastercard.png" alt="mastercard"><img src="./assets/widgets/visa.png" alt="visa"></label>
+                <input type="radio" id="stripe" name="paymentType" /><label class="pTypeButton" for="stripe"><img src="./assets/widgets/mastercard.png" alt="mastercard"><img src="./assets/widgets/visa.png" alt="visa"></label>
             </div>
         </section>
         <section id="finishPayment">
             <h2>Finish your payment:</h2>
             <div>
-                <input type="submit" value="place donation"/>
+                <input type="submit" value="place donation" />
             </div>
             </form>
             <p>We are committed to your privacy. Upon selecting an option, you will be able to input your payment details and donate.</p>
@@ -120,19 +128,25 @@
         </section>
         <section id="thank">
             <h2>Volunteering</h2>
-            <img src="./assets/photos/hands.png" alt="Hands"/>
-            <p>Thank you for your interest in supporting our team.
-                <br><br>
-                I you are interested in volunteering, please contact our enquiries office at <b>028 28361</b> or contact our volunteers coordinator: <a href="email:katecrowley224@gmail.ie">katecrowley224@gmail.ie</a>
-                <br><br>
-                Please not that all volunteers are expected to have in-date Garda vetting forms.
-                <br><br>
-                After contacting us and confirming your volunteer status, you can download our membership pack here.</p>
+            <img src="./assets/photos/hands.png" alt="Hands" />
+            <div id="thankDesc">
+                <p>Thank you for your interest in supporting our team.</p>
+                <p>
+                    I you are interested in volunteering, please contact our enquiries office at <a>028 28361</a> or contact our volunteers coordinator: <a href="email:katecrowley224@gmail.ie">katecrowley224@gmail.ie</a>
+                </p>
+                <p>
+                    Please not that all volunteers are expected to have in-date Garda vetting forms.
+                </p>
+                <p>
+                    After contacting us and confirming your volunteer status, you can download our membership pack here.
+                </p>
+            </div>
         </section>
     </main>
     <footer>
-        <a href="tel:1800333333" ><img src="./assets/widgets/phone.png" alt="Phone"/> 1800 333 333</a>
-        <a href="email:info@wchrr.ie" ><img src="./assets/widgets/email.png" alt="email"/>info@wchrr.ie</a>
+        <a href="tel:1800333333"><img src="./assets/widgets/phone.png" alt="Phone" /> 1800 333 333</a>
+        <a href="email:info@wchrr.ie"><img src="./assets/widgets/email.png" alt="email" />info@wchrr.ie</a>
     </footer>
 </body>
+
 </html>
