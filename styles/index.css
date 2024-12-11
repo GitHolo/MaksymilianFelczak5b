@@ -159,7 +159,7 @@ input[type="radio"] {
 	border: 5px solid #7b7b7b;
 	border-radius: 50%;
 	cursor: pointer;
-	margin-right: 5px;
+	margin-right: 12px;
 	transition: background-color 0.3s ease;
 }
 
@@ -171,6 +171,7 @@ input[type="radio"]:checked + .custom-radio {
 	display: flex;
 	align-items: center;
 	margin-right: 7px;
+	font-size: 18px;
 }
 .pType {
 	display: flex;
@@ -178,23 +179,21 @@ input[type="radio"]:checked + .custom-radio {
 .donBox {
 	background-color: #709bff;
 	border-radius: 5%;
-	height: 250px;
-	width: 280px;
-	padding: 15px;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	height: 243px;
+	width: 275px;
+	padding: 21px;
 	color: white;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	box-shadow: rgba(0, 0, 0, 0.356) 6px 6px 10px;
 	position: relative;
 }
 
 #donBoxes {
 	display: flex;
-	justify-content: space-around;
-	gap: 20px;
+	justify-content: flex-start;
+	gap: 92px;
+	margin-top: 26px;
 }
 .donBox > label {
 	margin-bottom: 50px;
@@ -202,25 +201,28 @@ input[type="radio"]:checked + .custom-radio {
 .donBox > label > p {
 	width: auto !important;
 	font-weight: 1000;
-	margin-top: 50px;
+	margin-top: 38px;
+	font-size: 17.5px;
 }
 .donBox > label > h2 {
 	font-weight: 1000;
-	font-size: 30px;
+	margin: 0;
+	margin-top: 24px;
 }
 .donButton {
 	display: inline-block;
 	background-color: white;
 	color: #709bff;
 	font-weight: bold;
-	padding: 10px 20px;
-	border-radius: 20px;
+	padding: 16px 19px;
+	border-radius: 46px;
 	text-transform: uppercase;
 	transition: background-color 0.2s, color 0.2s;
 	position: absolute;
-	bottom: 15px;
-	right: 15px;
+	bottom: 22px;
+	right: 21px;
 	cursor: pointer;
+	font-size: 28px;
 }
 .custom-input-wrapper {
 	display: inline-flex;
