@@ -4,6 +4,7 @@
 	position: absolute;
 	opacity: 0.4;
 	z-index: 9999999;
+	display: none !important;
 }
 
 /*! main styles */
@@ -196,13 +197,14 @@ input[type="radio"]:checked + .custom-radio {
 	border-radius: 20px;
 	height: 24px;
 	width: 52px;
-	text-align: right;
+	text-align: center !important;
 	font-size: 20px;
 	font-weight: 200;
 	font-family: auto;
 	outline: none;
 	box-shadow: none;
 	border: 2px solid #7b7b7b;
+	box-shadow: rgba(0, 0, 0, 0.5) 2px 2px 5px;
 }
 
 .pType:nth-child(3) > label > input[type="number"]:focus {
@@ -413,6 +415,7 @@ footer > a {
 	font-size: 18px;
 	margin-bottom: 4px;
 	letter-spacing: 1px;
+	font-weight: 100;
 }
 footer > a > img {
 	filter: brightness(1000%) contrast(1000%);
