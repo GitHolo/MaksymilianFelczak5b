@@ -1,17 +1,11 @@
-/* Define a custom font named "Montserrat" */
+/* font */
 @font-face {
-	font-family: "Montserrat";
-	src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
-	font-weight: normal;
+	font-family: Montserrat;
+	src: url(../assets/fonts/Montserrat-Regular.ttf) format("truetype");
+	font-weight: 400;
 	font-style: normal;
 }
-
-/* Apply the custom font to all elements */
-* {
-	font-family: "Montserrat", sans-serif;
-}
-
-/* Debugging element */
+/* debug :) */
 #site-base {
 	width: 100%;
 	position: absolute;
@@ -19,13 +13,13 @@
 	z-index: 9999999;
 	display: none !important;
 }
-
-/* Remove default margin from the body element */
+/* base styles */
+* {
+	font-family: Montserrat, sans-serif;
+}
 body {
 	margin: 0;
 }
-
-/* Header styling */
 header {
 	display: flex;
 	align-items: center;
@@ -33,15 +27,13 @@ header {
 	z-index: 999999;
 	text-wrap: nowrap;
 	position: fixed;
-	background-color: white;
+	background-color: #fff;
 	justify-content: space-between;
 	width: 100%;
 }
-/* Unordered list styling */
 ul {
 	list-style: none;
 }
-/* Heading styling */
 h2 {
 	font-size: 26px;
 	word-spacing: 1.5px;
@@ -51,23 +43,28 @@ p {
 	font-size: 17px;
 }
 main {
-	color: #808080;
+	color: grey;
 }
 main > section {
-	margin: 22px;
-	margin-left: 64px;
+	margin: 22px 22px 22px 64px;
 }
-
 a {
 	text-decoration: none;
 	color: #7b7b7b;
-	font-weight: bold;
+	font-weight: 700;
 	cursor: pointer;
 }
 input[type="radio"] {
 	display: none;
 }
-/* Banner styling */
+p > a:hover {
+	color: #27488f;
+}
+h3 {
+	margin-top: 32px;
+	font-size: 17px;
+	word-spacing: 1.5px;
+}
 #banner {
 	display: flex;
 	flex-wrap: wrap;
@@ -78,37 +75,27 @@ input[type="radio"] {
 	margin: 0;
 	padding-top: 165px;
 }
-
-/* Image styling within the banner */
 #banner > img {
 	width: 33.33%;
 	height: 100%;
 	object-fit: fill;
 }
-
-/* Donation description styling */
 #donDesc {
 	margin: 22px;
 	margin-left: 64px;
 }
-
-/* Donation description heading styling */
 #donDesc > h2 {
 	font-size: 26px;
 }
-/* Donation description paragraph styling */
 #donDesc > p {
 	width: auto !important;
 	font-weight: 1000;
 	margin-top: 38px;
 	font-size: 17.5px;
 }
-
-/* Donation payment type styling */
 #paymentType {
 	margin-top: 40px;
 }
-
 #logo {
 	display: flex;
 	flex-direction: column;
@@ -121,7 +108,6 @@ input[type="radio"] {
 #logo > img {
 	width: 240px;
 }
-
 #logo > a {
 	color: #27488f;
 	text-decoration: none;
@@ -134,7 +120,7 @@ input[type="radio"] {
 	word-spacing: 4px;
 }
 #hPhone {
-	font-weight: bold;
+	font-weight: 700;
 	color: #333;
 }
 #hPhone > img {
@@ -147,7 +133,6 @@ input[type="radio"] {
 }
 #links > li {
 	padding: 5px;
-
 	display: flex;
 }
 #links > li > a {
@@ -161,6 +146,7 @@ input[type="radio"] {
 	color: #27488f;
 }
 
+/* custom css */
 .custom-radio {
 	display: inline-block;
 	width: 15px;
@@ -171,11 +157,9 @@ input[type="radio"] {
 	margin-right: 10px;
 	transition: background-color 0.3s ease;
 }
-
 input[type="radio"]:checked + .custom-radio {
 	background-color: #709bff;
 }
-
 .pType > label {
 	display: flex;
 	align-items: center;
@@ -201,11 +185,10 @@ input[type="radio"]:checked + .custom-radio {
 	font-size: 20px;
 	font-weight: 200;
 	font-family: auto;
-	outline: none;
+	outline: 0;
 	box-shadow: none;
 	border: 2px solid #7b7b7b;
 }
-
 .pType:nth-child(3) > label > input[type="number"]:focus {
 	border-color: #709bff;
 }
@@ -218,13 +201,12 @@ input[type="radio"]:checked + .custom-radio {
 	height: 243px;
 	width: 275px;
 	padding: 21px;
-	color: white;
+	color: #fff;
 	display: flex;
 	flex-direction: column;
 	box-shadow: rgba(0, 0, 0, 0.356) 6px 6px 10px;
 	position: relative;
 }
-
 #donBoxes {
 	display: flex;
 	justify-content: flex-start;
@@ -245,11 +227,13 @@ input[type="radio"]:checked + .custom-radio {
 	margin: 0;
 	margin-top: 24px;
 }
+
+/* custom payment button */
 .donButton {
 	display: inline-block;
-	background-color: white;
+	background-color: #fff;
 	color: #709bff;
-	font-weight: bold;
+	font-weight: 700;
 	padding: 16px 19px;
 	border-radius: 46px;
 	text-transform: uppercase;
@@ -260,29 +244,17 @@ input[type="radio"]:checked + .custom-radio {
 	cursor: pointer;
 	font-size: 28px;
 }
-.custom-input-wrapper {
-	display: inline-flex;
-	align-items: center;
-	background-color: white;
-	border-radius: 20px;
-	box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 8px;
-	border: 4px solid #7b7b7b;
-	padding: 10px 15px;
-	width: 100%;
-	max-width: 40px;
-	margin-left: 10px;
-	transition: border-color 0.3s ease;
-}
 input[type="radio"]:checked + .donButton {
 	background-color: #27488f;
-	color: white;
+	color: #fff;
 }
-
 #paymentDescs {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
+/* secure payment */
 #secure {
 	background-color: #dce6ff;
 	color: #709bff;
@@ -302,14 +274,13 @@ input[type="radio"]:checked + .donButton {
 #secure > img {
 	width: 30px;
 }
+/* payment type buttons */
 #pTypeButtons {
 	display: flex;
 	gap: 47px;
 	margin-left: 240px;
 }
-p > a:hover {
-	color: #27488f;
-}
+
 .pTypeButton {
 	display: flex;
 	padding: 10px;
@@ -338,6 +309,7 @@ p > a:hover {
 input[type="radio"]:checked + .pTypeButton {
 	background-color: #27488f;
 }
+/* button submit */
 #finishPayment {
 	margin-top: 38px;
 }
@@ -350,7 +322,7 @@ input[type="radio"]:checked + .pTypeButton {
 input[type="submit"] {
 	background-color: #709bff;
 	border: none;
-	color: white;
+	color: #fff;
 	padding: 15px 35px;
 	border-radius: 14px;
 	font-size: 22px;
@@ -362,18 +334,13 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #27488f;
 }
-h3 {
-	margin-top: 32px;
-	font-size: 17px;
-	word-spacing: 1.5px;
-}
+/* faq */
 #faq > p {
 	margin-left: 44px;
 	width: 55%;
 	font-size: 17.5px;
 	margin-bottom: 46px;
 }
-
 #faq > h2 {
 	margin-top: 59px;
 	word-spacing: 1.5px;
@@ -382,13 +349,14 @@ h3 {
 #faq > p:last-of-type {
 	margin-bottom: 40px;
 }
+/* volunteering part */
+#thank {
+	margin: 0;
+}
 #thank > img {
 	width: 100%;
 	height: auto;
 	margin: 0 !important;
-}
-#thank {
-	margin: 0;
 }
 #thankDesc > p:first-child {
 	word-spacing: 1.5px;
@@ -409,6 +377,7 @@ h3 {
 #thank > * {
 	margin-left: 64px;
 }
+/* footer */
 footer {
 	background-color: #27488f;
 	padding: 20px 26px;
@@ -418,7 +387,7 @@ footer {
 	height: 42px;
 }
 footer > a {
-	color: white;
+	color: #fff;
 	display: flex;
 	align-items: center;
 	font-size: 18px;
