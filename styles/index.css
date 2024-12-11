@@ -1,69 +1,36 @@
-/* font */
 @font-face {
-	font-family: Montserrat;
-	src: url(../assets/fonts/Montserrat-Regular.ttf) format("truetype");
-	font-weight: 400;
+	font-family: "Montserrat";
+	src: url("../assets/fonts/Montserrat-Regular.ttf") format("truetype");
+	font-weight: normal;
 	font-style: normal;
 }
-/* debug :) */
+
+* {
+	font-family: "Montserrat", sans-serif;
+}
 #site-base {
 	width: 100%;
 	position: absolute;
 	opacity: 0.4;
 	z-index: 9999999;
-	display: none !important;
-}
-/* base styles */
-* {
-	font-family: Montserrat, sans-serif;
 }
 body {
 	margin: 0;
 }
 header {
 	display: flex;
+
 	align-items: center;
 	height: 165px;
 	z-index: 999999;
 	text-wrap: nowrap;
 	position: fixed;
-	background-color: #fff;
+	background-color: white;
 	justify-content: space-between;
 	width: 100%;
 }
 ul {
 	list-style: none;
-}
-h2 {
-	font-size: 26px;
-	word-spacing: 1.5px;
-}
-p {
-	width: 52%;
-	font-size: 17px;
-}
-main {
-	color: grey;
-}
-main > section {
-	margin: 22px 22px 22px 64px;
-}
-a {
-	text-decoration: none;
-	color: #7b7b7b;
-	font-weight: 700;
-	cursor: pointer;
-}
-input[type="radio"] {
-	display: none;
-}
-p > a:hover {
-	color: #27488f;
-}
-h3 {
-	margin-top: 32px;
-	font-size: 17px;
-	word-spacing: 1.5px;
 }
 #banner {
 	display: flex;
@@ -74,6 +41,10 @@ h3 {
 	width: 100%;
 	margin: 0;
 	padding-top: 165px;
+}
+h2 {
+	font-size: 26px;
+	word-spacing: 1.5px;
 }
 #banner > img {
 	width: 33.33%;
@@ -89,13 +60,18 @@ h3 {
 }
 #donDesc > p {
 	width: auto !important;
-	font-weight: 1000;
-	margin-top: 38px;
 	font-size: 17.5px;
+	margin: 0;
+	margin-top: 14px;
 }
-#paymentType {
-	margin-top: 40px;
+#donPayment > h2 {
+	margin-bottom: 18px;
 }
+p {
+	width: 52%;
+	font-size: 17px;
+}
+
 #logo {
 	display: flex;
 	flex-direction: column;
@@ -108,6 +84,13 @@ h3 {
 #logo > img {
 	width: 240px;
 }
+#hPhone {
+	font-weight: bold;
+	color: #333;
+}
+#hPhone > img {
+	margin-right: 14px;
+}
 #logo > a {
 	color: #27488f;
 	text-decoration: none;
@@ -119,13 +102,6 @@ h3 {
 	font-size: 18px;
 	word-spacing: 4px;
 }
-#hPhone {
-	font-weight: 700;
-	color: #333;
-}
-#hPhone > img {
-	margin-right: 14px;
-}
 #links {
 	display: flex;
 	gap: 30px;
@@ -133,6 +109,7 @@ h3 {
 }
 #links > li {
 	padding: 5px;
+
 	display: flex;
 }
 #links > li > a {
@@ -146,7 +123,24 @@ h3 {
 	color: #27488f;
 }
 
-/* custom css */
+main {
+	color: #808080;
+}
+main > section {
+	margin: 22px;
+	margin-left: 64px;
+}
+
+a {
+	text-decoration: none;
+	color: #7b7b7b;
+	font-weight: bold;
+	cursor: pointer;
+}
+input[type="radio"] {
+	display: none;
+}
+
 .custom-radio {
 	display: inline-block;
 	width: 15px;
@@ -157,9 +151,11 @@ h3 {
 	margin-right: 10px;
 	transition: background-color 0.3s ease;
 }
+
 input[type="radio"]:checked + .custom-radio {
 	background-color: #709bff;
 }
+
 .pType > label {
 	display: flex;
 	align-items: center;
@@ -185,10 +181,11 @@ input[type="radio"]:checked + .custom-radio {
 	font-size: 20px;
 	font-weight: 200;
 	font-family: auto;
-	outline: 0;
+	outline: none;
 	box-shadow: none;
 	border: 2px solid #7b7b7b;
 }
+
 .pType:nth-child(3) > label > input[type="number"]:focus {
 	border-color: #709bff;
 }
@@ -201,12 +198,13 @@ input[type="radio"]:checked + .custom-radio {
 	height: 243px;
 	width: 275px;
 	padding: 21px;
-	color: #fff;
+	color: white;
 	display: flex;
 	flex-direction: column;
 	box-shadow: rgba(0, 0, 0, 0.356) 6px 6px 10px;
 	position: relative;
 }
+
 #donBoxes {
 	display: flex;
 	justify-content: flex-start;
@@ -227,13 +225,11 @@ input[type="radio"]:checked + .custom-radio {
 	margin: 0;
 	margin-top: 24px;
 }
-
-/* custom payment button */
 .donButton {
 	display: inline-block;
-	background-color: #fff;
+	background-color: white;
 	color: #709bff;
-	font-weight: 700;
+	font-weight: bold;
 	padding: 16px 19px;
 	border-radius: 46px;
 	text-transform: uppercase;
@@ -244,17 +240,29 @@ input[type="radio"]:checked + .custom-radio {
 	cursor: pointer;
 	font-size: 28px;
 }
+.custom-input-wrapper {
+	display: inline-flex;
+	align-items: center;
+	background-color: white;
+	border-radius: 20px;
+	box-shadow: rgba(0, 0, 0, 0.1) 4px 4px 8px;
+	border: 4px solid #7b7b7b;
+	padding: 10px 15px;
+	width: 100%;
+	max-width: 40px;
+	margin-left: 10px;
+	transition: border-color 0.3s ease;
+}
 input[type="radio"]:checked + .donButton {
 	background-color: #27488f;
-	color: #fff;
+	color: white;
 }
+
 #paymentDescs {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
-
-/* secure payment */
 #secure {
 	background-color: #dce6ff;
 	color: #709bff;
@@ -274,13 +282,14 @@ input[type="radio"]:checked + .donButton {
 #secure > img {
 	width: 30px;
 }
-/* payment type buttons */
 #pTypeButtons {
 	display: flex;
 	gap: 47px;
 	margin-left: 240px;
 }
-
+p > a:hover {
+	color: #27488f;
+}
 .pTypeButton {
 	display: flex;
 	padding: 10px;
@@ -309,7 +318,6 @@ input[type="radio"]:checked + .donButton {
 input[type="radio"]:checked + .pTypeButton {
 	background-color: #27488f;
 }
-/* button submit */
 #finishPayment {
 	margin-top: 38px;
 }
@@ -322,7 +330,7 @@ input[type="radio"]:checked + .pTypeButton {
 input[type="submit"] {
 	background-color: #709bff;
 	border: none;
-	color: #fff;
+	color: white;
 	padding: 15px 35px;
 	border-radius: 14px;
 	font-size: 22px;
@@ -334,13 +342,18 @@ input[type="submit"] {
 input[type="submit"]:hover {
 	background-color: #27488f;
 }
-/* faq */
+h3 {
+	margin-top: 32px;
+	font-size: 17px;
+	word-spacing: 1.5px;
+}
 #faq > p {
 	margin-left: 44px;
 	width: 55%;
 	font-size: 17.5px;
 	margin-bottom: 46px;
 }
+
 #faq > h2 {
 	margin-top: 59px;
 	word-spacing: 1.5px;
@@ -349,14 +362,13 @@ input[type="submit"]:hover {
 #faq > p:last-of-type {
 	margin-bottom: 40px;
 }
-/* volunteering part */
-#thank {
-	margin: 0;
-}
 #thank > img {
 	width: 100%;
 	height: auto;
 	margin: 0 !important;
+}
+#thank {
+	margin: 0;
 }
 #thankDesc > p:first-child {
 	word-spacing: 1.5px;
@@ -377,7 +389,6 @@ input[type="submit"]:hover {
 #thank > * {
 	margin-left: 64px;
 }
-/* footer */
 footer {
 	background-color: #27488f;
 	padding: 20px 26px;
@@ -387,7 +398,7 @@ footer {
 	height: 42px;
 }
 footer > a {
-	color: #fff;
+	color: white;
 	display: flex;
 	align-items: center;
 	font-size: 18px;
@@ -398,4 +409,7 @@ footer > a > img {
 	filter: brightness(1000%) contrast(1000%);
 	width: 30px;
 	margin-right: 17px;
+}
+a {
+	cursor: pointer;
 }
